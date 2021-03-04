@@ -1,0 +1,50 @@
+{
+  "name": "bsecure",
+  "version": "1.0.1",
+  "description": "Pakistan's first universal checkout solution for ecommerce stores built on woocommerce, magento, shopify and more",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf dist && mkdir dist",
+    "build:commonjs": "babel lib -d dist",
+    "build": "npm run clean && npm run build:commonjs",
+    "debug": "npm run build && node-debug examples/index.js",
+    "test": "npm run build && mocha --require babel-register"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "keywords": [
+    "payments",
+    "node",
+    "nodejs",
+    "bsecure-node",
+    "bsecure",
+    "checkout",
+    "one-click-checkout",
+    "universal-checkout",
+    "ecommerce",
+    "two-step-checkout",
+    "sso",
+    "single-sign-on"
+  ],
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bSecureCheckout/bsecure-node.git"
+  },
+  "author": "https://github.com/bSecureCheckout/bsecure-node/graphs/contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bSecureCheckout/bsecure-node/issues"
+  },
+  "homepage": "https://github.com/bSecureCheckout/bsecure-node#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
