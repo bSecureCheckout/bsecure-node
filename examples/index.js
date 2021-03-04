@@ -3,7 +3,7 @@ let config = {
   client_secret: "<client-secret>",
   environment: "<app-environment>",
 };
-const bsecure = require("bsecure-checkout")(config);
+const bsecure = require("bsecure")(config);
 
 // --------------------
 // Checkout Button

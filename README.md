@@ -11,7 +11,7 @@ It is built for _desktop_, _tablet_, and _mobile devices_ and is continuously te
 
 You can install the package via **npm**
 
-`npm install bsecure-checkout --save`
+`npm install bsecure --save`
 
 #### Getting Your Credentials
 
@@ -43,7 +43,7 @@ let config = {
 The package needs to be configured with your account's credentials, which is available in the bSecure [Builder Portal](https://builder.bsecure.pk/):
 
 ```JavaScript
-const bSecure = require("bsecure-checkout");
+const bSecure = require("bsecure");
 let bsecure = new bSecure(config);
     bsecure.createToken()
     .then(response => console.log(response))
@@ -53,7 +53,7 @@ let bsecure = new bSecure(config);
 Or using,
 
 ```JavaScript
-const bsecure = require("bsecure-checkout")(config);
+const bsecure = require("bsecure")(config);
     bsecure.createToken()
     .then(response => console.log(response))
     .catch(error => console.error(error));
@@ -62,7 +62,7 @@ const bsecure = require("bsecure-checkout")(config);
 Or using ES modules and async/await:
 
 ```JavaScript
-import bSecure from 'bsecure-checkout';
+import bSecure from 'bsecure';
 
 (async () => {
   try {
@@ -172,7 +172,7 @@ In response createOrder(), will return order expiry, checkout_url, order_referen
 ```
 {
   "expiry": "2020-11-27 10:55:14",
-  "checkout_url": "bSecure-checkout-url",
+  "checkout_url": "bsecure-url",
   "order_reference": "bsecure-reference",
   "merchant_order_id": "your-order-id",
 }
@@ -181,7 +181,7 @@ In response createOrder(), will return order expiry, checkout_url, order_referen
 > You have recieved bsecure order link now simply redirect the user to checkout_url
 
 ```Javascript
-window.location.href = "http://bsecure-checkout-url";
+window.location.href = "http://bsecure-url";
 ```
 
 When order is created successfully on bSecure, you will be redirected bSecure checkout app where you will process your checkout.
