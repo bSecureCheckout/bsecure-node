@@ -45,7 +45,7 @@ The package needs to be configured with your account's credentials, which is ava
 ```JavaScript
 const bSecure = require("bsecure");
 let bsecure = new bSecure(config);
-    bsecure.createToken()
+    bsecure.authorize()
     .then(response => console.log(response))
     .catch(error => console.error(error));
 ```
@@ -54,7 +54,7 @@ Or using,
 
 ```JavaScript
 const bsecure = require("bsecure")(config);
-    bsecure.createToken()
+    bsecure.authorize()
     .then(response => console.log(response))
     .catch(error => console.error(error));
 ```
@@ -66,7 +66,7 @@ import bSecure from 'bsecure';
 
 (async () => {
   try {
-    const token = await bsecure.createToken(config);
+    const token = await bsecure.authorize(config);
     console.log(token);
   } catch (error) {
     console.error(error);
