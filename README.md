@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="https://bsecure-dev.s3-eu-west-1.amazonaws.com/dev/react_app/assets/secure_logo.png" width="400px" position="center">
+</p>
+
+[![NPM](https://nodei.co/npm/bsecure.png?mini=true)](https://nodei.co/npm/bsecure/)
+[![npm version](https://badge.fury.io/js/bsecure.svg)](https://badge.fury.io/js/bsecure)
 [![Build Status](https://scrutinizer-ci.com/g/bSecureCheckout/bsecure-node/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bSecureCheckout/bsecure-node/build-status/master)
 [![Code Coverage](https://scrutinizer-ci.com/g/bSecureCheckout/bsecure-node/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bSecureCheckout/bsecure-node/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bSecureCheckout/bsecure-node/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bSecureCheckout/bsecure-node/?branch=master)
