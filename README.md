@@ -300,11 +300,11 @@ In response of "**[Callback on Order Placement](#callback-on-order-placement)**"
 | ID  | Value                 | Description                                                                                                                       |
 | :-: | :-------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
 |  1  | Created               | A customer created an order but not landed on bsecure                                                                             |
-|  2  | Initiated             | Order is awaiting fulfillment. Explanation                                                                                        |
-|  3  | Placed                | Order fulfilled and complete Payment received (paid); order is awaiting fulfillment. – requires no further action                 |
+|  2  | Initiated             | Order is awaiting fulfillment.                                                                                                    |
+|  3  | Placed                | Order fulfilled and complete Payment received. Order is awaiting fulfillment. – requires no further action                        |
 |  4  | Awaiting Confirmation | Awaiting action by the customer to authenticate the transaction.                                                                  |
 |  5  | Canceled              | Canceled by an admin or the customer.                                                                                             |
-|  6  | Expired               | Explanation                                                                                                                       |
+|  6  | Expired               | Orders that were not fulfilled within a pre-specified timeframe. timeframe                                                        |
 |  7  | Failed                | Payment failed or was declined (unpaid).Note that this status may not show immediately and instead show as Pending until verified |
 |  8  | Awaiting Payment      | Order received, no payment initiated. Awaiting payment (unpaid)                                                                   |
 
