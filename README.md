@@ -215,6 +215,99 @@ By using order_ref you received in the "**[Callback on Order Placement](#callbac
 Whenever there is any change in order status or payment status, bSecure will send you an update with complete
 order details (contents will be the same as response of _[Order Updates] on the URL you mentioned in \_Checkout Order Status webhook_ in your environment settings in Builders Portal. (your webhook must be able to accept POST request).
 
+In response of "**[Callback on Order Placement](#callback-on-order-placement)**" and "**[Order Updates](#order-updates)**" you will recieve complete details of your order in below mentioned format:
+
+```
+{
+  "status": 200,
+  "message": [
+    "Request Successful"
+  ],
+  "body": {
+    "merchant_order_id": "your-order-id",
+    "order_ref": "bsecure-order-reference",
+    "order_type": "App/Manual/Payment gateway",
+    "placement_status": "6",
+    "payment_status": null,
+    "customer": {
+      "name": "",
+      "email": "",
+      "country_code": "",
+      "phone_number": "",
+      "gender": "",
+      "dob": ""
+    },
+    "payment_method": {
+      "id": 5,
+      "name": "Debit/Credit Card"
+    },
+    "card_details": {
+      "card_type": null,
+      "card_number": null,
+      "card_expire": null,
+      "card_name": null
+    },
+    "delivery_address": {
+      "country": "",
+      "province": "",
+      "city": "",
+      "area": "",
+      "address": "",
+      "lat": "",
+      "long": ""
+    },
+    "shipment_method": {
+      "id": 0,
+      "name": "",
+      "description": "",
+      "cost": 0
+    },
+    "items": [
+      {
+        "product_id": "",
+        "product_name": "",
+        "product_sku": "",
+        "product_qty": ""
+      },
+    ],
+    "created_at": "",
+    "time_zone": "",
+    "summary": {
+      "total_amount": "",
+      "sub_total_amount": "",
+      "discount_amount": "",
+      "shipment_cost": "",
+      "merchant_service_charges": ""
+    }
+  },
+  "exception": null
+}
+
+```
+
+### Managing Orders and Payments
+
+#### Payment Status
+
+| ID  | Value     | Description                                                         |
+| :-: | :-------- | :------------------------------------------------------------------ |
+|  0  | Pending   | Order received, no payment initiated.Awaiting payment (unpaid).     |
+|  1  | Completed | Order fulfilled and complete. Payment also recieved.                |
+|  2  | Failed    | Payment failed or was declined (unpaid) or requires authentication. |
+
+#### Order Status
+
+| ID  | Value                 | Description                                                                                                                       |
+| :-: | :-------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
+|  1  | Created               | A customer created an order but not landed on bsecure                                                                             |
+|  2  | Initiated             | Order is awaiting fulfillment. Explanation                                                                                        |
+|  3  | Placed                | Order fulfilled and complete Payment received (paid); order is awaiting fulfillment. – requires no further action                 |
+|  4  | Awaiting Confirmation | Awaiting action by the customer to authenticate the transaction.                                                                  |
+|  5  | Canceled              | Canceled by an admin or the customer.                                                                                             |
+|  6  | Expired               | Explanation                                                                                                                       |
+|  7  | Failed                | Payment failed or was declined (unpaid).Note that this status may not show immediately and instead show as Pending until verified |
+|  8  | Awaiting Payment      | Order received, no payment initiated. Awaiting payment (unpaid)                                                                   |
+
 ## bSecure Single Sign On (SSO)
 
 ### Routing
