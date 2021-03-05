@@ -1,3 +1,7 @@
+[![Build Status](https://scrutinizer-ci.com/g/bSecureCheckout/bsecure-node/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bSecureCheckout/bsecure-node/build-status/master)
+[![Code Coverage](https://scrutinizer-ci.com/g/bSecureCheckout/bsecure-node/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bSecureCheckout/bsecure-node/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bSecureCheckout/bsecure-node/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bSecureCheckout/bsecure-node/?branch=master)
+
 # bSecure Checkout
 
 Pakistan's first universal checkout solution that is easy and simple to integrate on your e-commerce store.
