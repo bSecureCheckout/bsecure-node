@@ -16,6 +16,10 @@ Pakistan's first universal checkout solution that is easy and simple to integrat
 It gives you an option to enable _universal-login_, _two-click checkout_ and accept multiple payment method for your customers, as well as run your e-commerce store hassle free.\
 It is built for _desktop_, _tablet_, and _mobile devices_ and is continuously tested and updated to offer a frictionless payment experience for your e-commerce store.
 
+### Demo
+
+click here to see the [**demo**](https://bsecure-node-testpaymentplugin.herokuapp.com/)
+
 ### Installation
 
 You can install the package via **npm**
