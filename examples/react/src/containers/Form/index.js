@@ -106,7 +106,7 @@ export default function Form() {
   return (
     <div className="Form">
       <AppBar>
-        <h3>bSecure Payment Plugin</h3>
+        <h3>bSecure</h3>
       </AppBar>
       <form style={{ marginTop: 80, marginBottom: 20 }}>
         <div className="heading">Customer Detail</div>
