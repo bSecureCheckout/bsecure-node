@@ -56,20 +56,22 @@ let config = {
 The package needs to be configured with your account's credentials, which is available in the bSecure [Builder Portal](https://builder.bsecure.pk/):
 
 ```JavaScript
-const bSecure = require("bsecure");
-let bsecure = new bSecure(config);
-    bsecure.authorize()
-    .then(response => console.log(response))
-    .catch(error => console.error(error));
+import bSecure from 'bsecure';
+let bsecure = new bSecure({
+  client_id: "YOUR-CLIENT-ID",
+  client_secret: "YOUR-CLIENT-SECRET",
+  environment: "YOUR-APP-ENVIRONMENT",
+});
 ```
 
 Or using,
 
 ```JavaScript
-const bsecure = require("bsecure")(config);
-    bsecure.authorize()
-    .then(response => console.log(response))
-    .catch(error => console.error(error));
+const bsecure = require("bsecure")({
+  client_id: "YOUR-CLIENT-ID",
+  client_secret: "YOUR-CLIENT-SECRET",
+  environment: "YOUR-APP-ENVIRONMENT",
+});
 ```
 
 Or using ES modules and async/await:

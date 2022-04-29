@@ -1,6 +1,6 @@
 {
   "name": "bsecure",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Pakistan's first universal checkout solution for ecommerce stores built on woocommerce, magento, shopify and more",
   "main": "lib/index.js",
   "scripts": {
@@ -21,7 +21,8 @@
     "nodejs",
     "bsecure-node",
     "bsecure",
-    "bsecure",
+    "payment-integration",
+    "payment-gatway",
     "one-click-checkout",
     "universal-checkout",
     "ecommerce",
@@ -29,6 +30,7 @@
     "sso",
     "single-sign-on"
   ],
+  "private": false,
   "dependencies": {
     "axios": "^0.21.1"
   },
